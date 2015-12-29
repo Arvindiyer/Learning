@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+    <style type="text/css">
+        tabsdemoDynamicHeight md-content {
+        background-color: transparent !important; }
+        .tabsdemoDynamicHeight md-content md-tabs {
+        background: #f6f6f6;
+        border: 1px solid #e1e1e1; }
+        .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+        background: white; }
+        .tabsdemoDynamicHeight md-content h1:first-child {
+         margin-top: 0; }
+    </style>
+</head>
+    <body ng-app="YourApp">
+     <md-toolbar layout="column">
+        <center><h3>Blog Application</h3></center>
+     </md-toolbar>   
+   
+     <div ng-cloak>
+          <md-content>
+            <md-tabs md-dynamic-height md-border-bottom>
+              <md-tab label="About">
+                <md-content class="md-padding">
+                  <h1 class="md-display-2">Tab One</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+                </md-content>
+              </md-tab>
+              <md-tab label="New Blog">
+                <md-content class="md-padding">
+                  <div class="post" >
+                    <h2>Add New Post</h2>
+            </div>
+                </md-content>
+              </md-tab>
+              <md-tab label="View a Blog">
+                <md-content class="md-padding">
+                  <h1 class="md-display-2">Tab Three</h1>
+                  <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                </md-content>
+              </md-tab>
+            </md-tabs>
+          </md-content>
+        </div>
+
+
+
+
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-aria/angular-aria.js"></script>
+    <script src="/node_modules/angular-animate/angular-animate.js"></script>
+    <script src="/node_modules/angular-material/angular-material.js"></script>
+    <script>
+
+        // Include app dependency on ngMaterial
+
+        //angular.module( 'YourApp', [ 'ngMaterial' ] )
+        //    .controller("YourController", YourController );
+
+            var app = angular.module('YourApp', ['ngMaterial']);
+           
+
+    </script>
+
+</body>
+</html>
